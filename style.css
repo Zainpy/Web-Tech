@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: Open Sans, sans-serif
+}
+
+header {
+    background-color: #74b9ff;
+    padding: 1rem 0;
+    width: 100%;
+}
+.title {
+    color: #333333;
+    padding-top: 5%;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
