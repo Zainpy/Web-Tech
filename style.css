@@ -1,17 +1,153 @@
-body {
-    margin: 0;
-    font-family: Open Sans, sans-serif
+html{
+    display: flex;
+}
+    
+body{
+    background-color: antiquewhite;
+    background-image: linear-gradient(white,rgb(198, 220, 240));
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    background-color: royalblue;
+    opacity: 80%;
+    padding: 0.5em 2.5em;
+}
+
+.heading a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-top:100px;
+}
+
+
+.heading div {
+    margin: 0px;
+    padding: 0px;
+}
+nav ul{
+    background-color:royalblue;
+    opacity: 80%;
+    padding: 0 2em;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav li{
+    align-items: center;
+    float: left;
+}
+
+nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+}
+
+nav li a:hover{
+    background-color: rgba(255, 245, 238, 0.707);
 }
 
 header {
-    background-color: #74b9ff;
-    padding: 1rem 0;
-    width: 100%;
+    background-image: url(/images/CFSspace-heading.jpg);
+    background-color: #cccccc;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
 }
+
 .title {
-    color: #333333;
-    padding-top: 5%;
-    font-size: 2rem;
+    padding: 4em 0;
     text-align: center;
-    vertical-align: middle;
+    font-size: 150%;
+}
+
+main {
+    position:relative;
+    padding: 1em 4em;
+    color: black;
+}
+
+
+
+input {
+    border-color: #ffa700;
+    border-style: solid;
+    padding: 10px 40px;
+    width: 100px;
+}
+/* form button {
+    padding: 10px 40px;
+    background-color: rgb(109, 214, 255);
+    border-style: none;
+    border-radius: 5px;
+}
+
+
+form{
+    padding:5px 3em;
+    background-color: #ff8b38;
+    box-shadow: gray 10px 10px 10px;
+    z-index: 1;
+    position: absolute;
+    left: 330px;
+    top: -150px;
+
+    border-radius: 5px;
+} */
+
+.areas-header {
+   
+    padding-top: 70px;  
+    font-size: 30px;
+}
+
+select {
+    padding: 10px 40px;
+}
+
+.areas {
+    display: flex;
+}
+
+.area {
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.area img{
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.area-name{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.area:hover {
+    transform: scale(1.05);
 }
