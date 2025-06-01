@@ -10,9 +10,11 @@ body{
     padding: 0px;
     color: #ffffff;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .heading {
@@ -36,35 +38,104 @@ body{
     margin: 0px;
     padding: 0px;
 }
-nav ul{
-    background-color:royalblue;
-    opacity: 80%;
-    padding: 0 2em;
-    list-style-type: none;
-    margin: 0px;
-    overflow: hidden;
-}
 
-nav li{
+.navbar {
+    background-color: royalblue;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    float: left;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 
-nav li a{
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin-right:1rem;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links a{
     text-decoration: none;
-    display: block;
-    padding: 10px;
-    color: #ffffff;
+    color:#000000;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-nav li a:hover{
-    background-color: rgba(255, 245, 238, 0.707);
+.nav-links a:hover {
+    background-color: #e4e4e4;
+    color: #8f8f8f;
+}
+
+.nav-links a.active {
+    background-color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height:25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: none;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius:3px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .nav-links{
+        display: none;
+        flex-direction:column;
+        width: 100%;
+        background-color: #8f8f8f;
+    }
+
+    .nav-links.show { 
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .menu-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
 }
 
 header {
     background-image: url(/images/CFSspace-heading.jpg);
     background-color: #cccccc;
-    height: 700px;
+    width: 100%;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,9 +155,8 @@ main {
     position:relative;
     padding: 1em 4em;
     color: black;
+    width:100%;
 }
-
-
 
 input {
     border-color: #ffa700;
@@ -94,13 +164,13 @@ input {
     padding: 10px 40px;
     width: 100px;
 }
-/* form button {
+
+form button {
     padding: 10px 40px;
     background-color: rgb(109, 214, 255);
     border-style: none;
     border-radius: 5px;
 }
-
 
 form{
     padding:5px 3em;
@@ -110,12 +180,10 @@ form{
     position: absolute;
     left: 330px;
     top: -150px;
-
     border-radius: 5px;
-} */
+}
 
 .areas-header {
-   
     padding-top: 70px;  
     font-size: 30px;
 }
@@ -126,9 +194,14 @@ select {
 
 .areas {
     display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .area {
+    width: 100%;
     padding: 0px;
     margin: 10px;
     border-radius: 10px;
