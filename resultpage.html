@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFSpace</title>
+    
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div><h3>CFSpace</h3></div>
+            <div><a href="members.html">about </a></div>
+        </div>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">CFSpace</div>
+            <div class="nav-links" id="menu">
+                <input type="radio" id="darkmode" onclick="toggleDark()">
+                <a href="homepage.html" >Home</a>
+                <a href="members.html"class="active">About</a>
+                <a href="resultpage.html">Search</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="search-bar">
+            <label for="Places">Place</label>
+            <select name="Places-option" id="Places-option">
+                <option value="Al-Jurjani">Al-Jurjani</option>
+                <option value="CFS-Stadium">CFS Stadium</option>
+                <option value="Al-Khalil">Al-Khalil</option>
+                <option value="Ibn-Sina">Ibn Sina</option>
+            </select>
+            <input type="name" placeholder="Name of Facility" id="name">
+            <input type="name" placeholder="Activity" id="time">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="areas-header">Places</div>
+        <p>popular places to handle an event</p>
+        <div class="areas">
+            <div class="area">
+                <div class="area-name">Al-Khawarizmi</div>
+                <img src="images/puchong.jpg" alt="puchong">
+            </div>
+            <div class="area">
+                <div class="area-name">Al-Jurjani</div>
+                <img src="images/petalingjaya.jpg" alt="Petaling Jaya">
+            </div>
+            <div class="area">
+                <div class="area-name">Student centre</div>
+                <img src="images/subangjaya.jpg" alt="Subang">
+            </div>
+            <div class="area">
+                <div class="area-name">CFS Stadium</div>
+                <img src="images/sepang.jpeg" alt="Sepang">
+            </div>           
+        </div>
+    </main>
+    <footer>
+        <p>&copy; CFSpace</p>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
+

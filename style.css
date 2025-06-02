@@ -1,17 +1,226 @@
-body {
-    margin: 0;
-    font-family: Open Sans, sans-serif
+html{
+    display: flex;
+}
+    
+body{
+    background-color: antiquewhite;
+    background-image: linear-gradient(white,rgb(198, 220, 240));
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    background-color: royalblue;
+    opacity: 80%;
+    padding: 0.5em 2.5em;
+}
+
+.heading a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-top:100px;
+}
+
+
+.heading div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: royalblue;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin-right:1rem;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#000000;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e4e4e4;
+    color: #8f8f8f;
+}
+
+.nav-links a.active {
+    background-color: #ffffff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height:25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: none;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    border-radius:3px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-wrap: wrap;
+    }
+    .nav-links{
+        display: none;
+        flex-direction:column;
+        width: 100%;
+        background-color: #8f8f8f;
+    }
+
+    .nav-links.show { 
+        display: flex;
+        margin-left: -20px;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .menu-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
 }
 
 header {
-    background-color: #74b9ff;
-    padding: 1rem 0;
+    background-image: url(/images/CFSspace-heading.jpg);
+    background-color: #cccccc;
     width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
 }
+
 .title {
-    color: #333333;
-    padding-top: 5%;
-    font-size: 2rem;
+    padding: 4em 0;
     text-align: center;
-    vertical-align: middle;
+    font-size: 150%;
+}
+
+main {
+    position:relative;
+    padding: 1em 4em;
+    color: black;
+    width:100%;
+}
+
+input {
+    border-color: #ffa700;
+    border-style: solid;
+    padding: 10px 40px;
+    width: 100px;
+}
+
+form button {
+    padding: 10px 40px;
+    background-color: rgb(109, 214, 255);
+    border-style: none;
+    border-radius: 5px;
+}
+
+form{
+    padding:5px 3em;
+    background-color: #ff8b38;
+    box-shadow: gray 10px 10px 10px;
+    z-index: 1;
+    position: absolute;
+    left: 330px;
+    top: -150px;
+    border-radius: 5px;
+}
+
+.areas-header {
+    padding-top: 70px;  
+    font-size: 30px;
+}
+
+select {
+    padding: 10px 40px;
+}
+
+.areas {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.area {
+    width: 100%;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.area img{
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.area-name{
+    z-index: 2;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.area:hover {
+    transform: scale(1.05);
 }
