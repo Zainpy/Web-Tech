@@ -1,0 +1,20 @@
+{
+    "facilities": [
+        {"name": "CFS Stadium Field", "activity": "Sports", "place": "CFS Stadium"},
+        {"name": "Volleyball court", "activity": "Sports", "place": "CFS Stadium"},
+        {"name": "Basketball court", "activity": "Sports", "place": "CFS Stadium"},
+        {"name": "Multipurpose Room 1", "activity": "Exhibtion", "place": "Dar al-Hikmah Library"},
+        {"name": "Multipurpose Room 2", "activity": "Exhibtion", "place": "Dar al-Hikmah Library"},
+        {"name": "Cyber Room 1", "activity": "Lectures", "place": "Dar al-Hikmah Library"},
+        {"name": "Cyber Room 2", "activity": "Lectures", "place": "Dar al-Hikmah Library"},
+        {"name": "Lecture Hall 1", "activity": "Lectures", "place": "Al-Jurjani"},
+        {"name": "Lecture Hall 2", "activity": "Lectures", "place": "Al-Jurjani"},
+        {"name": "Al-Khawarizmi Hall", "activity": "Gathering", "place": "Al-Khawarizmi"},
+        {"name": "Banquet Hall", "activity": "Gathering", "place": "Abu Bakar As-Siddiq"},
+        {"name": "Exam Hall 1", "activity": "Workshops", "place": "Al-Jurjani"},
+        {"name": "Exam Hall 2", "activity": "Workshops", "place": "Al-Jurjani"},
+        {"name": "Computer Lab", "activity": "Lectures", "place": "Al-Khalil"},
+        {"name": "Language Lab", "activity": "Lectures", "place": "Al-Khalil"},
+        {"name": "Tutorial Room", "activity": "Lectures", "place": "Al-Jurjani"}
+    ]
+}
