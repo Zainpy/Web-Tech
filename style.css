@@ -98,6 +98,78 @@ body{
     border-radius:3px;
 }
 
+
+.facility-section  {
+      display: flex;
+      justify-content:  center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+.facility-card {
+      background: white;
+      border-radius: 8px;
+      position: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+    }
+
+    .facility-card img, .activity-card img {
+      width: 100%;
+      height: 160px;
+      background-color: #ccc;
+    }
+
+    .facility-content {
+      padding: 15px;
+    }
+
+    .facility-content h3 {
+      margin: 0 0 10px;
+    }
+
+    .facility-content p {
+      margin: 0 0 15px;
+      color: #555;
+    }
+
+    .facility-content button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .activities{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding : 2%;
+    }
+
+    .grid-container{
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas:
+    "activity-card-1 activity-card-1 activity-card-2 activity-card-2 activity-card-3 activity-card-3"
+    "activity-card-1 activity-card-1 activity-card-4 activity-card-4 activity-card-4 activity-card-4";
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows:150px 150px;
+}
+
+   .activity-card{
+    background-color: lightgrey;
+    font-weight: bold;
+     border-radius: 8px;
+    text-align: center;
+   }
+
+
 @media screen and (max-width: 768px){
     .navbar{
         flex-wrap: wrap;
@@ -201,7 +273,7 @@ select {
 }
 
 .area {
-    width: 100%;
+    width: flex;
     padding: 0px;
     margin: 10px;
     border-radius: 10px;
@@ -224,3 +296,4 @@ select {
 .area:hover {
     transform: scale(1.05);
 }
+
