@@ -3,7 +3,7 @@ html{
 }
     
 body{
-    background-color: antiquewhite;
+    background-color: #eaf4fc;
     background-image: linear-gradient(white,rgb(198, 220, 240));
     font-family: sans-serif;
     margin: 0px;
@@ -152,14 +152,15 @@ body{
 
     .grid-container{
     display: grid;
+    position: relative;
+    left: auto;
     grid-auto-columns: 200px;
     grid-auto-rows: 200px;
     gap: 1em;
     grid-template-areas:
     "activity-card-1 activity-card-1 activity-card-2 activity-card-2 activity-card-3 activity-card-3"
     "activity-card-1 activity-card-1 activity-card-4 activity-card-4 activity-card-4 activity-card-4";
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows:150px 150px;
+    
 }
 
    .activity-card{
@@ -167,6 +168,7 @@ body{
     font-weight: bold;
      border-radius: 8px;
     text-align: center;
+    overflow: hidden;
    }
 
 
