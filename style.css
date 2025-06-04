@@ -103,16 +103,17 @@ body{
       display: flex;
       justify-content:  center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 15px;
+      width:100%;
+      max-width: fit-content;
     }
 
 .facility-card {
       background: white;
       border-radius: 8px;
-      position: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       overflow: hidden;
-      width: 280px;
+      flex: 1 1 200px;
     }
 
     .facility-card img, .activity-card img {
@@ -147,7 +148,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 100px;
-    padding : 2%;
+    width: 100%;
+    
     }
 
     .grid-container{
@@ -156,17 +158,30 @@ body{
     grid-auto-rows: 200px;
     gap: 1em;
     grid-template-areas:
-    "activity-card-1 activity-card-1 activity-card-2 activity-card-2 activity-card-3 activity-card-3"
-    "activity-card-1 activity-card-1 activity-card-4 activity-card-4 activity-card-4 activity-card-4";
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows:150px 150px;
+    " activity-card-2 activity-card-2 activity-card-3 activity-card-3"
+    " activity-card-4 activity-card-4 activity-card-4 activity-card-4";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:150px 150px;
+    position: relative;
 }
+
+    .one{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 200px;
+        height: 200px;
+    }
 
    .activity-card{
     background-color: lightgrey;
     font-weight: bold;
-     border-radius: 8px;
+    border-radius: 8px;
     text-align: center;
+   }
+
+   .activitiy-card span{
+    z-index: 5;
    }
 
 
@@ -227,6 +242,7 @@ main {
     position:relative;
     padding: 1em 4em;
     color: black;
+    max-width: fit-content;
     width:100%;
 }
 
@@ -268,7 +284,7 @@ select {
     display: flex;
     
     flex-wrap: wrap;
-    justify-content: center;
+   
     align-items: center;
 }
 
