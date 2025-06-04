@@ -3,7 +3,7 @@ html{
 }
     
 body{
-    background-color: antiquewhite;
+    background-color: #eaf4fc;
     background-image: linear-gradient(white,rgb(198, 220, 240));
     font-family: sans-serif;
     margin: 0px;
@@ -154,6 +154,8 @@ body{
 
     .grid-container{
     display: grid;
+    position: relative;
+    left: auto;
     grid-auto-columns: 200px;
     grid-auto-rows: 200px;
     gap: 1em;
@@ -178,6 +180,7 @@ body{
     font-weight: bold;
     border-radius: 8px;
     text-align: center;
+    overflow: hidden;
    }
 
    .activitiy-card span{
