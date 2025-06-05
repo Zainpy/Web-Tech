@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility Information</title>
+    <style>
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 700px;
+        }
+
+        .container {
+            display: flex;
+            width: 850px;
+            border: 2px solid #6c5ce7;
+            padding: 20px;
+            background: linear-gradient(135deg, #dfe6e9, #ffffff);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.25);
+        }
+
+        /* Layout */
+        .left-column {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Content Styles */
+        h2 {
+            margin-bottom: 10px;
+            color: #6c5ce7;
+            border-left: 4px solid #6c5ce7;
+            padding-left: 10px;
+            font-weight: 600;
+        }
+        p {
+            line-height: 1.5;
+            color: #2d3436;
+            font-size: 16px;
+        }
+
+        /* Placeholder Styling */
+        .placeholder {
+            width: 270px;
+            height: 160px;
+            background-color: #b2bec3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .placeholder:hover {
+            transform: scale(1.35);
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>Contact Information</h2>
+            <p>Email: example@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+
+            <h2>Facility Name</h2>
+            <p>Example Facility</p>
+
+            <h2>Facility Information</h2>
+            <p>Our facility offers modern amenities, spacious rooms, and easy access to key locations.</p>
+        </div>
+        <div class="right-column">
+            <div class="placeholder" <img src="" alt="Image">Image</div>
+            <div class="placeholder" <img src="" alt="Map">Map</div>
+        </div>
+    </div>
+</body>
+</html>
