@@ -93,11 +93,20 @@ body {
 .availability-button {
   background-color: black;
   color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
   border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
+  width: auto; 
+  transition: background-color 0.3s ease;
 }
+
+.availability-button:hover {
+  background-color: #333;
+}
+
 
 /* Footer */
 .footer {
